@@ -51,5 +51,5 @@ func main() {
 
 	corsRouter := enableCORS(r)
 	log.Println("Server running in ", port)
-	log.Fatal(http.ListenAndServe(port, corsRouter))
+	log.Fatal(http.ListenAndServe(":"+port, corsRouter))
 }
